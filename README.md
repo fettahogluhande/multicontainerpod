@@ -13,7 +13,7 @@ Kubernetes'teki bir Pod'un birden fazla container içerdiği anlamına gelir. Bi
 4-) Tek volume oluşturularak ikisine de mount edilir.
 
 ### Komutlar
-<kubectl apply -f pod.yaml>
-<kubectl get pod -w>
-<kubectl exec -it multicontainer -c webcontainer -- /bin/sh>
-<kubectl port-forward pod/multicontainer 8081:80>
+* ```kubectl apply -f pod.yaml```
+* ```kubectl get pod -w```
+* ```kubectl exec -it multicontainer -c webcontainer -- /bin/sh```
+* ```kubectl port-forward pod/multicontainer 8081:80```
