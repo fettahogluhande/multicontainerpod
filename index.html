@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Change Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            transition: background-color 0.5s ease;
+        }
+        .container {
+            text-align: center;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Color Change Game</h1>
+        <p>Click the button to change the background color!</p>
+        <button onclick="changeColor()">Change Color</button>
+    </div>
+
+    <script>
+        function changeColor() {
+            // Generate a random color in hexadecimal format
+            const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+            // Change the background color of the body
+            document.body.style.backgroundColor = randomColor;
+        }
+    </script>
+</body>
+</html>
